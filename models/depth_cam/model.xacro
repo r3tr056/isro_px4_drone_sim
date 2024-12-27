@@ -1,0 +1,29 @@
+<macro name="depth_camra" params="name namespace parent_link pose">
+    <link name="${name}_link">
+        <pose>${pose}</pose>
+        <sensor name="${name}" type="depth">
+        <pose>0 0 0 0 0 0</pose>
+        <camera>
+            <horizontal_fov>1.047</horizontal_fov>
+            <image>
+            <width>640</width>
+            <height>480</height>
+            <format>R8G8B8</format>
+            </image>
+            <clip>
+            <near>0.1</near>
+            <far>100.0</far>
+            </clip>
+        </camera>
+        <plugin name="${name}_plugin" filename="libgazebo_ros_camera.so">
+            <ros>
+            <namespace>${namespace}</namespace>
+            </ros>
+        </plugin>
+        </sensor>
+    </link>
+    <joint name="${parent_link}_to_${name}_joint" type="fixed">
+        <parent link="${parent_link}"/>
+        <child link="${name}_link"/>
+    </joint>
+</macro>

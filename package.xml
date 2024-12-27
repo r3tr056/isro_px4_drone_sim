@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>px4_drone_sim</name>
+  <version>0.0.1</version>
+  <description>PX4 Drone simulation package</description>
+  <maintainer email="dangerankur56@gmail.com">r3tr056</maintainer>
+  <license>MIT License</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>demo_nodes_cpp</exec_depend>
+  <exec_depend>demo_nodes_py</exec_depend>
+  
+
+  <depend>rclcpp</depend>
+  <depend>px4_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>xacro</depend>
+  <depend>px4</depend>
+  <depend>ros_gz_bridge</depend>
+  <depend>ros_gz_sim</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+    <gazebo_ros gazebo_media_path="${prefix}"/>
+    <gazebo_ros gazebo_model_path="${prefix}" />
+  </export>
+</package>

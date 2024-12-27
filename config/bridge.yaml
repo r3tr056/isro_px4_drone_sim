@@ -1,0 +1,26 @@
+# config/bridge.yaml
+---
+# Base topics from previous config...
+
+# 3D Lidar
+- topic_name: "/lidar/points"
+  ros_type_name: "sensor_msgs/msg/PointCloud2"
+  gz_type_name: "gz.msgs.PointCloud"
+
+# Depth Camera
+- topic_name: "/depth_camera/image_raw"
+  ros_type_name: "sensor_msgs/msg/Image"
+  gz_type_name: "gz.msgs.Image"
+
+- topic_name: "/depth_camera/depth"
+  ros_type_name: "sensor_msgs/msg/Image"
+  gz_type_name: "gz.msgs.Image"
+
+- topic_name: "/depth_camera/points"
+  ros_type_name: "sensor_msgs/msg/PointCloud2"
+  gz_type_name: "gz.msgs.PointCloud"
+
+# Ultrasound Range
+- topic_name: "/sonar/range"
+  ros_type_name: "sensor_msgs/msg/Range"
+  gz_type_name: "gz.msgs.LaserScan"
