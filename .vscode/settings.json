@@ -1,0 +1,15 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/retro/Projects/isro_martian_drone/ros_workspace/install/px4_ros_com/lib/python3.10/site-packages",
+        "/home/retro/Projects/isro_martian_drone/ros_workspace/install/px4_drone_control/lib/python3.10/site-packages",
+        "/home/retro/Projects/isro_martian_drone/ros_workspace/install/px4_msgs/lib/python3.10/site-packages",
+        "/opt/ros/rolling/lib/python3.10/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/retro/Projects/isro_martian_drone/ros_workspace/install/px4_ros_com/lib/python3.10/site-packages",
+        "/home/retro/Projects/isro_martian_drone/ros_workspace/install/px4_drone_control/lib/python3.10/site-packages",
+        "/home/retro/Projects/isro_martian_drone/ros_workspace/install/px4_msgs/lib/python3.10/site-packages",
+        "/opt/ros/rolling/lib/python3.10/site-packages"
+    ],
+    "ros.distro": "rolling"
+}

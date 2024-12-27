@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/retro/Projects/isro_martian_drone/ros_workspace/install/px4_ros_com/include/**",
+        "/home/retro/Projects/isro_martian_drone/ros_workspace/install/px4_msgs/include/**",
+        "/opt/ros/rolling/include/**",
+        "/home/retro/Projects/isro_martian_drone/ros_workspace/src/px4_drone_sim/include/**",
+        "/home/retro/Projects/isro_martian_drone/ros_workspace/src/px4_ros_com/include/**",
+        "include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
